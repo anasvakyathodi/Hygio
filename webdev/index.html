@@ -8,8 +8,9 @@
     <link rel="stylesheet " href="https://s.pageclip.co/v1/pageclip.css " media="screen ">
 
     <body>
-        <! nav!>
-        <section id="nav-bar ">
+        <!--nsv---> 
+        
+       <section id="nav-bar ">
             <nav class="navbar navbar-expand-lg navbar-light bg-light ">
                 <a class="navbar-brand " href="# "><img src="images/logo1.jpg "></a>
                 <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarText " aria-controls="navbarText " aria-expanded="false " aria-label="Toggle navigation ">
@@ -21,14 +22,19 @@
                       <a class="nav-link " href="# ">HOME <span class="sr-only ">(current)</span></a>
                     </li>
                     <li class="nav-item ">
-                      <a class="nav-link " href="# ">ABOUT US</a>
+                      <a class="nav-link " href="#about ">ABOUT US</a>
                     </li>
                     <li class="nav-item ">
                       <a class="nav-link " href="# ">PRODUCT</a>
                     </li>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link " href="# ">ORDER</a>
+                  </li>
                     <li class="nav-item ">
                         <a class="nav-link " href="# ">OUR TEAM</a>
                       </li>
+                      
                       <li class="nav-item ">
                         <a class="nav-link " href="# ">CONTACT</a>
                       </li>
@@ -84,11 +90,13 @@
                 </a>
               </div>
         </div>
+
+      <a name="about ">
         <section id="about ">
           <div class="container ">
             <div class="row ">
               <div class="col-md-6 ">
-                <h2>About us</h2>
+                <h2 id="about ">About us</h2>
               </div>
               <div class="about-content ">
                 Heynmsdnkasjdcas,cbasajasmdcias.,asnck;as asndkjasdndashdladkasnasdkckdsacdsankasmdbjaskds,dbask.dskadcnasd,mbcmasbdsdcsadbcsnadcmbasmddcsddsdsfsd
@@ -101,7 +109,10 @@
           
           </div>
         </section>
-        <!...........services!>
+      </a>
+    
+        
+
 
         <section id="services "style=" background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/services.png); background-size: cover; background-position: center; ; background-attachment: fixed; padding-top: 50px; padding-bottom:
         50px; ">
@@ -164,20 +175,24 @@
 
         </section>
         <!-----orders-->
+       
         <center>
         <section id="orders " style="background-color:darkslategray; ">
           <div class="container ">
             <div class="row ">
-              <div class="columns ">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeI0WAlwBL76CscVQDxjLdBnHwPrMrbCGA7FCjGlMJp-IyoEw/viewform?embedded=true " width="500 " height="600 " frameborder="0 " marginheight="0 " marginwidth="0 ">Loading…</iframe>
 
-
+              <div class=" col-md-2 ">
+               
+                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeI0WAlwBL76CscVQDxjLdBnHwPrMrbCGA7FCjGlMJp-IyoEw/viewform?embedded=true " width="500 " height="600 " frameborder="0 " marginheight="0 " marginwidth="0 ">Loading…</iframe>
               </div>
-          
-                <div class="columns " style="padding-left: 20px; ">
-                  <img src="images/orders.jpg style="max-width:80%;">
+    
 
-    </div>
+              <div class=" col-md-2 ">
+                    <div class="item-image " style="padding-left:90px; ">
+                   
+                      <img src="images/orders.jpg " alt=" " title=" " media-simple="true " style="max-width:100%; ">
+
+            </div>
 
 
     </div>
@@ -269,6 +284,7 @@
     </section>
 
     <!---contact us-->
+  
     <center>
         <section id="contact " style="background-color:gray ">
             <footer id="footer ">
@@ -340,6 +356,22 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
     <script src="https://s.pageclip.co/v1/pageclip.js " charset="utf-8 "></script>
+    <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
     </body>
 
 </html>
