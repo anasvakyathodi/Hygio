@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Hygieo | Sanitizers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -38,7 +39,7 @@
   <body>
     <!--nsv--->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <nav id="mynav" class="navbar navbar-expand-lg navbar-light fixed-top">
         <a class="navbar-brand" href="#"
           ><img src="./assets/images/logo1.jpg"
         /></a>
@@ -55,8 +56,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#main">HOME </a>
+            <li class="nav-item">
+              <a class="nav-link active" href="#main">HOME </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">ABOUT US</a>
@@ -87,28 +88,25 @@
     <section id="about" class="about">
       <div class="container">
         <div class="row">
-          <div
-            class="col-md-6 order-md-2 d-flex justify-content-center align-items-center"
-          >
+          <div class="col-md-6 d-flex order-md-2 align-items-center">
             <img
               src="./assets/images/about_illustration.svg"
               alt="about-teams-illustration"
             />
           </div>
-          <div class="col-md-6 d-flex align-items-center direction-column">
-            <div class="text-center">
-              <h2 id="about">About Us</h2>
-              <p class="about-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                inventore dolores aliquam quidem officia voluptate minus omnis
-                fuga nobis minima exercitationem in earum nihil dolor
-                reprehenderit molestiae est, sit voluptatum!
-              </p>
+          <div
+            class="col-md-6 d-flex align-items-center justify-content-center flex-column"
+            style="text-align: center; margin: 3rem auto 0"
+          >
+            <h2>About Us</h2>
+            <p class="about-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              inventore dolores aliquam quidem officia voluptate minus omnis
+              fuga nobis minima exercitationem in earum nihil dolor
+              reprehenderit molestiae est, sit voluptatum!
+            </p>
 
-              <button type="button" class="btn-about" data-toggle="button">
-                Know More
-              </button>
-            </div>
+            <a href="#team" class="btn-about"> Know More </a>
           </div>
         </div>
       </div>
@@ -121,47 +119,63 @@
         </div>
         <div class="row">
           <div class="col-md-3 col-12">
-            <div class="text-center">
-              <i class="fas fa-pump-soap"></i>
-              <div class="product-name">Product 1</div>
-              <p class="product-desc">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis fugit voluptas impedit
-              </p>
-              <a href="#order" class="btn-product">order now</a>
+            <div class="card">
+              <div class="text-center p-5">
+                <i class="fas fa-pump-soap card-img-top"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="product-name">Product</h5>
+                <p class="product-desc">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#order" class="btn-product">order now</a>
+              </div>
             </div>
           </div>
           <div class="col-md-3 col-12">
-            <div class="text-center">
-              <i class="fas fa-pump-soap"></i>
-              <div class="product-name">Product 1</div>
-              <p class="product-desc">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis fugit voluptas impedit
-              </p>
-              <a href="#order" class="btn-product">order now</a>
+            <div class="card">
+              <div class="text-center p-5">
+                <i class="fas fa-pump-soap card-img-top"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="product-name">Product</h5>
+                <p class="product-desc">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#order" class="btn-product">order now</a>
+              </div>
             </div>
           </div>
           <div class="col-md-3 col-12">
-            <div class="text-center">
-              <i class="fas fa-pump-soap"></i>
-              <div class="product-name">Product 1</div>
-              <p class="product-desc">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis fugit voluptas impedit
-              </p>
-              <a href="#order" class="btn-product">order now</a>
+            <div class="card">
+              <div class="text-center p-5">
+                <i class="fas fa-pump-soap card-img-top"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="product-name">Product</h5>
+                <p class="product-desc">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#order" class="btn-product">order now</a>
+              </div>
             </div>
           </div>
           <div class="col-md-3 col-12">
-            <div class="text-center">
-              <i class="fas fa-pump-soap"></i>
-              <div class="product-name">Product 1</div>
-              <p class="product-desc">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis fugit voluptas impedit
-              </p>
-              <a href="#order" class="btn-product">order now</a>
+            <div class="card">
+              <div class="text-center p-5">
+                <i class="fas fa-pump-soap card-img-top"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="product-name">Product</h5>
+                <p class="product-desc">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#order" class="btn-product">order now</a>
+              </div>
             </div>
           </div>
         </div>
@@ -172,6 +186,15 @@
     <section id="order" class="order">
       <div class="container">
         <div class="row">
+          <div
+            class="col-md-6 order-md-2 d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="./assets/images/order_illustration.svg"
+              alt="order-illustration"
+              class="item-image"
+            />
+          </div>
           <div class="col-md-6">
             <h2 class="title">Order Now</h2>
             <form
@@ -222,15 +245,6 @@
               <p id="my-form-status"></p>
             </form>
           </div>
-          <div
-            class="col-md-6 d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="./assets/images/order_illustration.svg"
-              alt="order-illustration"
-              class="item-image"
-            />
-          </div>
         </div>
       </div>
     </section>
@@ -242,60 +256,84 @@
         <h1 class="title">Our Team</h1>
         <div class="row">
           <div class="col-md-3 col-12">
-            <img
-              src="https://picsum.photos/200.jpg"
-              alt="loading..."
-              class="team-profile"
-            />
-            <h4 class="m-1">John Snow</h4>
-            <p>Chief Advisor</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-              voluptates officia error
-            </p>
-            <button href="tel:9656551078/" class="m-2 cta">Call</button>
+            <div class="card">
+              <div class="d-flex m-3 align-items-centes justify-content-center">
+                <img
+                  src="https://picsum.photos/200.jpg"
+                  alt="loading..."
+                  class="team-profile"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="m-1">John Snow</h5>
+                <p>Chief Advisor</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat, voluptates officia error
+                </p>
+                <button href="tel:9656551078/" class="m-2 cta">Call</button>
+              </div>
+            </div>
           </div>
           <div class="col-md-3 col-12">
-            <img
-              src="https://picsum.photos/200.jpg"
-              alt="loading..."
-              class="team-profile"
-            />
-            <h4 class="m-1">John Snow</h4>
-            <p>Chief Advisor</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-              voluptates officia error
-            </p>
-            <button href="tel:9656551078/" class="m-2 cta">Call</button>
+            <div class="card">
+              <div class="d-flex m-3 align-items-centes justify-content-center">
+                <img
+                  src="https://picsum.photos/200.jpg"
+                  alt="loading..."
+                  class="team-profile"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="m-1">John Snow</h5>
+                <p>Chief Advisor</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat, voluptates officia error
+                </p>
+                <button href="tel:9656551078/" class="m-2 cta">Call</button>
+              </div>
+            </div>
           </div>
           <div class="col-md-3 col-12">
-            <img
-              src="https://picsum.photos/200.jpg"
-              alt="loading..."
-              class="team-profile"
-            />
-            <h4 class="m-1">John Snow</h4>
-            <p>Chief Advisor</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-              voluptates officia error
-            </p>
-            <button href="tel:9656551078/" class="m-2 cta">Call</button>
+            <div class="card">
+              <div class="d-flex m-3 align-items-centes justify-content-center">
+                <img
+                  src="https://picsum.photos/200.jpg"
+                  alt="loading..."
+                  class="team-profile"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="m-1">John Snow</h5>
+                <p>Chief Advisor</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat, voluptates officia error
+                </p>
+                <button href="tel:9656551078/" class="m-2 cta">Call</button>
+              </div>
+            </div>
           </div>
           <div class="col-md-3 col-12">
-            <img
-              src="https://picsum.photos/200.jpg"
-              alt="loading..."
-              class="team-profile"
-            />
-            <h4 class="m-1">John Snow</h4>
-            <p>Chief Advisor</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-              voluptates officia error
-            </p>
-            <button href="tel:9656551078/" class="m-2 cta">Call</button>
+            <div class="card">
+              <div class="d-flex m-3 align-items-centes justify-content-center">
+                <img
+                  src="https://picsum.photos/200.jpg"
+                  alt="loading..."
+                  class="team-profile"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="m-1">John Snow</h5>
+                <p>Chief Advisor</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat, voluptates officia error
+                </p>
+                <button href="tel:9656551078/" class="m-2 cta">Call</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -337,7 +375,7 @@
               <a class="text-white" href="tel:9037576282">9037576282</a>
             </p>
           </div>
-          <div class="col-md-4 d-flex align-items-center justify-content-end">
+          <div class="col-md-4 d-flex align-items-center">
             <div class="text-center" style="line-height: 2rem">
               Made with
               <i class="icon fa fa-heart"></i> by
@@ -359,8 +397,7 @@
       </div>
     </footer>
     <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/mailapi.js"></script>
     <script src="./assets/js/scripts.js"></script>
   </body>
